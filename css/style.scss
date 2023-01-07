@@ -1,0 +1,133 @@
+body {
+  font-weight: bold;
+  font-family: cursive;
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+header {
+  background-color: #ff5421;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+h2 {
+  width: fit-content;
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 8px;
+  transition: .5s;
+  color: #ff5421;
+}
+
+.change {
+  display: block;
+  padding: .7rem 1.2rem;
+  margin: 40px auto;
+  background-color: transparent;
+  border: 3px solid #ff5421;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ff5421;
+  font-size: 1.4rem;
+  transition: .1s;
+
+  &:hover {
+    border-radius: 0;
+    background-color: #333;
+    border-color: #333;
+  }
+}
+
+.line {
+  margin: 20px auto 0;
+  width: 500px;
+  height: 4px;
+  border: none;
+  background-color: darkorange;
+}
+
+.title-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+::selection {
+  background-color: #333;
+  color: #ff5421;
+}
+
+.change-t {
+  display: block;
+  padding: .7rem 1.2rem;
+  margin: 20px auto;
+  background-color: transparent;
+  border: 3px solid #ff5421;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ff5421;
+  font-size: 1.4rem;
+  transition: .2s;
+}
+
+.change-t:hover {
+  border-radius: 0;
+  background-color: #333;
+  border-color: #333;
+}
+
+.title-container {
+  >div {
+    background-color: darkorange;
+    color: #444;
+    font-size: 1.5rem;
+    padding: 6px 15px;
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+  }
+}
+
+.stitle {
+  transition: .1s;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.sec {
+  min-height: 25vh;
+  width: 50vw;
+  margin: 20px auto;
+  padding: 20px;
+  transition: .1s;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 10px 10px 30px #999;
+  border-radius: 12px;
+}
